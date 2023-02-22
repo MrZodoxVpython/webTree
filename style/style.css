@@ -1,0 +1,188 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: arial;
+}
+.bagian-satu {
+	background-image: url('images/background/3.png');
+	background-size: cover;
+	background-repeat: no-repeat, repeat;
+	position: relative;
+}
+.logo {
+	position: relative;
+	padding: 15px 20px;
+	font-size: 8px;
+    color: white;
+    z-index: 1;
+}
+.login button {
+	font-size: 13px;
+	position: absolute;
+	z-index: 1;
+    padding: 5px 20px;
+    text-align: right;
+    margin-left: 1270px;
+    margin-top: -41px;
+    padding-right: 15px;
+}
+.login a button {
+	font-weight: bold;
+	color: white;
+	text-decoration: bold;
+	background-color: transparent;
+	border: 1px solid #273593;
+
+}
+.login a button:hover {
+	border: 1px solid greenyellow;
+	box-shadow: 0 0 10px greenyellow;
+}
+nav ul li {
+	display: inline-block;
+
+}
+nav ul li a {
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 10px;
+}
+nav {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	margin-top: -35px;
+
+}
+nav ul li a:hover {
+	background-color: blue;
+	padding: 8px;
+    border: 1px solid greenyellow;
+}
+.bagian-satu::after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	bottom: 0;
+}
+article {
+	color: white;
+	padding-left: 60px;
+    padding-bottom: 185px;
+    position: relative;
+    z-index: 1;
+}
+article h1 {
+	font-size: 35px;
+	width: 300px;
+	padding-top: 120px;
+	z-index: 1;
+}
+article p {
+	padding-top: 20px;
+	padding-bottom: 15px;
+	width: 320px;
+	font-size: 13px;
+
+}
+
+/* Button Readmore*/
+
+.aButton {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 1vh;
+	background: #273593;
+}
+.aButton {
+	position: relative;
+	background-color: greenyellow;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 0.1em;
+	padding: 10px 30px;
+	transition: 0.5s;
+	z-index: 1;
+	width: 155px;
+	border-radius: 3px;
+}
+.aButton:hover {
+	letter-spacing: 0.25em;
+	background: var(--clr);
+	color: var(--clr);
+	box-shadow: 0 0 35px var(--clr);
+}
+.aButton::before {
+	content: '';
+	position: absolute;
+	inset: 2px;
+	background: #273593;
+}
+.aButton span {
+	position: relative;
+	z-index: 1;
+}
+.aButton i {
+	position: absolute;
+	inset: 0;
+	display: block;
+}
+.aButton i::before {
+	content: '';
+	position: absolute;
+	top: -3.5px;
+	left: 80%;
+	width: 10px;
+	height: 5px;
+	border: 2px solid greenyellow;
+	background: #273593;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+.aButton:hover i::before {
+	width: 20px;
+	left: 20px;
+}
+.aButton i::after {
+	content: '';
+	position: absolute;
+	bottom: -3.5px;
+	left: 20%;
+	width: 10px;
+	height: 5px;
+	border: 2px solid greenyellow;
+	background: #273593;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+.aButton:hover i::after {
+	width: 20px;
+	left: 80%;
+}
+
+/*button readmore closed*/
+
+.bagian-dua { 
+	
+}
+.boxOneInside {
+	text-align: center;
+	padding-top: 50px;
+}
+.box {
+	position: static;
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+	margin: 5px;
+}
